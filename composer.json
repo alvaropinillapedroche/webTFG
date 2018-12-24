@@ -1,0 +1,50 @@
+{
+    "name": "tdw_upm/tdw18_proyectoFinal",
+    "description": "TDW18 Proyecto Final",
+    "license": "MIT",
+    "type": "project",
+    "homepage": "http://miw.etsisi.upm.es",
+    "keywords": ["microframework", "rest", "slim", "doctrine", "psr7"],
+    "authors": [
+        {
+            "name": "TDW UPM",
+            "homepage": "http://miw.etsisi.upm.es/",
+            "email": "miw@etsisi.upm.es",
+            "role": "Developer"
+        }
+        ],
+    "autoload": {
+        "psr-4": {
+            "TDW18\\PFinal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TDW18\\PFinal\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+		"php": ">=7.1",
+        "ext-mysqli": "*",
+        "composer/composer": "1.6.*",
+        "doctrine/orm": "^2.5",
+        "slim/slim": "^3.10",
+        "monolog/monolog": "^1.17",
+        "vlucas/phpdotenv": "^2.4",
+        "tuupola/slim-jwt-auth": "^2.4"
+    },
+    "require-dev": {
+        "zircote/swagger-php": "^2.0",
+        "phpunit/phpunit": "^7.1",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "scripts": {
+        "pre-install-cmd": "TDW18\\PFinal\\Install::preInstall",
+        "post-install-cmd": "TDW18\\PFinal\\Install::postInstall",
+        "start": "php -S 127.0.0.1:8000 -t public",
+        "test": "./bin/phpunit"
+    }
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="codigo.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body onload="cargarUsuarios()">
+    <header class="p-3 mb-2 bg-light border">
+        <h1>Usuarios registrados</h1>
+        <h5 class="text-muted font-italic">Registrado como <span id="usuarioRegistrado"></span></h5>
+    </header>
+    
+    <div class="p-3 mb-2">
+        <a class="btn btn-info btn-lg ml-1" role="button" href="cuestionesMaestro.html"><i class="fa fa-arrow-left"></i> Atrás</a>
+    </div>
+    <div id="usuarios"></div>
+    <div id="sinUsuarios" class="ml-3" hidden>
+        <h3 class="font-italic">No se han encontrado usuarios</h3>
+    </div>
+    <div id="leyenda" class="container pl-0 pt-1">
+        <p>Activo: <span class="p-1 pl-5 pr-5 mr-4 ml-1 disponible"></span> No activo: <span class="p-1 pl-5 pr-5 ml-2 noDisponible"></span></p>
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

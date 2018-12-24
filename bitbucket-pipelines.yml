@@ -1,0 +1,15 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/VYk8Lw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: pyguerder/bitbucket-pipelines-php71
+
+pipelines:
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          - service mysql start
+          - mysql -h localhost -u root -proot -e "CREATE DATABASE db_name;"
+          - composer install --no-interaction --no-progress --prefer-dist
+          - composer test

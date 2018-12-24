@@ -1,0 +1,19 @@
+.disponible{
+    background-color: #c6ffb3;
+}
+
+.noDisponible{
+    background-color: #e6e6e6;
+}
+
+.correcta{
+     background: linear-gradient(to bottom left, #4fff1a 0%, #d8ffcc 100%);
+}
+
+.erronea{
+    background: linear-gradient(to bottom left, #ff1a1a 0%, #ffb3b3 100%);
+}
+
+.pendiente{
+    background: linear-gradient(to bottom left, #0052cc 0%, #99c2ff 100%);
+}

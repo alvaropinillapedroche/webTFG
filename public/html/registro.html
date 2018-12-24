@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./codigo.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animaciones.css">
+</head>
+<body>
+    <header class="p-3 mb-2 bg-light border">
+        <h1>Creación de nuevo usuario</h1>
+    </header>
+    <div class="container p-3 mb-4 mt-3 bg-light border border-dark rounded">
+        <label for="usuario" class="h4 font-weight-normal">Usuario*</label>
+        <input class="form-control" id="user" placeholder="Introduce el nombre de usuario" oninput="ocultarAlertaUsuario()" autofocus>
+        <div class="alert alert-danger p-1 mb-0 mt-1" id="alertaUsuario" role="alert" hidden>El usuario introducido ya existe. Introduzca uno diferente.
+        </div>
+        <label for="pass" class="h4 font-weight-normal mt-3">Contraseña*</label>
+        <input class="form-control" type="password" id="pass" placeholder="Introduce la contraseña" oninput="ocultarAlertas()">
+        <label class="form-text font-weight-light text-muted mt-3">* Campos obligatorios</label>
+        <div class="pl-0 mt-2 form-check">
+            <button class="btn btn-lg btn-success" onclick="crearUsuario()">Crear usuario</button>
+            <label class="ml-2" id="labelProcesando" hidden>Procesando...</label>
+        </div>
+        <div class="alert alert-danger pl-3 mb-0 mt-2" id="alertaDatos" role="alert" hidden>Introduzca los campos obligatorios.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.degradadoDiv{
+    animation: degradadoDiv 2s;
+}	 
+@keyframes degradadoDiv{
+    from {background-color: LightSkyBlue;}
+    to {background-color: #f8f9fa;}
+}
+
+.degradadoTextArea{
+    animation: degradadoTextArea 2s;
+}	 
+@keyframes degradadoTextArea{
+    from {background-color: LightSkyBlue;}
+    to {background-color: white;}
+}
+
+.degradadoTextAreaAprendiz{
+    animation: degradadoTextAreaAprendiz 2s;
+}	 
+@keyframes degradadoTextAreaAprendiz{
+    from {background-color: LightSkyBlue;}
+    to {background-color: #E9ECEF;}
+}
+
+.parpadeo {
+  animation: parpadeo 3s linear;
+}
+
+@keyframes parpadeo {
+  25% {opacity: 0;}
+  50% {opacity: 1;}
+  75% {opacity: 0;}
+}
