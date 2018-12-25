@@ -20,6 +20,10 @@ function getToken(){
     return window.localStorage.getItem("token");
 }
 
+function alertaError(error){
+    alert(error['code'] + ': ' + error['message']);
+}
+
 function cargarCuestionAprendiz(){
     document.getElementById("usuarioRegistrado").innerHTML = getUsername();
     var cuestion = getCuestionAprendiz(getIdCuestionAbierta());
@@ -236,7 +240,7 @@ function corregirAprendiz(event, esSolucion){
 
 function desactivar(elemento){
     elemento.getElementsByClassName("form-control")[0].readOnly = true;
-    elemento.getElementsByClassName("btn")[0].disabled = true;
+    elemento.getElementsByClassName("btn")[0].hidden = true;
     var checkBox = elemento.getElementsByClassName("form-check-input")[0];
     if(checkBox != null)
         checkBox.disabled = true;   
