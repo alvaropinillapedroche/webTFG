@@ -186,14 +186,6 @@ class Usuario implements \JsonSerializable
     }
 
     /**
-     * @param string $pass
-     */
-    public function setPass(string $pass): void
-    {
-        $this->pass = $pass;
-    }
-
-    /**
      * @return bool
      */
     public function isEsMaestro(): bool

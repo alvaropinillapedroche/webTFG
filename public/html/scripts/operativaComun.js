@@ -294,12 +294,12 @@ function formarUsuario(usuario){
     contenidoUsuario += '<button class="btn btn-danger ml-2 mt-1 pl-3 pr-3" type="button" onclick="eliminarUsuario(event)">Eliminar</button>';
     
     var usuarioNodo = document.createElement("div");
-    usuarioNodo.className = "usuario container p-3 mb-4 border border-dark rounded";
+    usuarioNodo.className = "usuario p-3 m-4 border border-dark rounded";
     if(usuario['activo']){
         usuarioNodo.className += " disponible";
     }
     else{
-        usuarioNodo.className += " noDisponible";
+        usuarioNodo.className += " pl-4 pr-4 noDisponible";
     }
     
     usuarioNodo.innerHTML = contenidoUsuario;
